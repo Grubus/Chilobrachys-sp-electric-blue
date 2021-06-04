@@ -132,6 +132,43 @@
 }
 
 #main #footer {
+  padding-top: 3vh;
   height: 10vh;
+  background-color: #303030;
+  color: white;
+  height: 100%;
+}
+
+#main #footer .header_footer {
+  color: purple;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
+#main #footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#main #footer li {
+  margin-bottom: 20px;
+}
+
+#main #footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#main #footer #icons_footer {
+  text-align: center;
+}
+
+#main #footer .fa {
+  margin: 20px;
+}
+
+#main #footer .kontakt {
+  margin: 0;
+  margin-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
