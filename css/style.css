@@ -1,0 +1,133 @@
+* {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#main #header {
+  height: 10vh;
+}
+
+#main #header #menu {
+  height: 100%;
+  width: 100%;
+  background: #ebe8d4da;
+}
+
+#main #header #menu #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #header #menu #navbar .navbar_item {
+  padding: 20px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#main #header #menu #navbar .active {
+  background: #dbd5b1;
+}
+
+#main #header #menu #navbar .border {
+  margin-top: 10px;
+  background: black;
+  opacity: 0.6;
+  height: 80%;
+  width: 5px;
+}
+
+#main #slider {
+  height: 40vh;
+  width: 100%;
+  background: #d3cfc9da;
+  position: relative;
+}
+
+#main #slider #slider_pointers {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #slider #slider_pointers .slider_pointer {
+  height: 5px;
+  width: 30px;
+  margin: 10px 5px;
+  background: black;
+  opacity: 0.4;
+}
+
+#main #slider #slider_arrow_previous {
+  height: 50%;
+  width: 5%;
+  position: absolute;
+  top: 25%;
+  background: lightbrown;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  left: 3%;
+}
+
+#main #slider #slider_arrow_previous img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main #slider #slider_arrow_next {
+  height: 50%;
+  width: 5%;
+  position: absolute;
+  top: 25%;
+  background: lightbrown;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  right: 3%;
+}
+
+#main #slider #slider_arrow_next img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main #slider .active {
+  opacity: 1 !important;
+}
+
+#main #content {
+  height: 700px;
+}
+
+#main #footer {
+  height: 10vh;
+}
+/*# sourceMappingURL=style.css.map */

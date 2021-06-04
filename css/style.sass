@@ -1,0 +1,95 @@
+*
+    box-sizing: content-box
+    margin: 0
+    padding: 0
+
+
+@mixin slider_arrow()
+    height: 50%
+    width: 5%
+    position: absolute
+    top: 25%
+    background: lightbrown
+    display: grid
+    place-items: center
+
+#main
+    display: flex
+    flex-direction: column
+    width: 100%
+
+    #header
+        height: 10vh
+
+        #menu
+            height: 100%
+            width: 100%
+            background: #ebe8d4da
+
+            #navbar
+                display: flex
+                width: 100%
+                height: 100%
+                list-style: none
+                justify-content: center
+
+                .navbar_item
+                    padding: 20px
+                    margin: 10px
+                    display: grid
+                    place-items: center
+
+                .active
+                    background: darken(#ebe8d4, 10%)
+
+                .border
+                    margin-top: 10px
+                    background: black
+                    opacity: 0.6
+                    height: 80%
+                    width: 5px
+
+    #slider
+        height: 40vh
+        width: 100%
+        background: #d3cfc9da
+        position: relative
+
+        #slider_pointers
+            position: absolute
+            width: 100%
+            bottom: 0
+            display: flex
+            justify-content: center
+
+            .slider_pointer
+                height: 5px
+                width: 30px
+                margin: 10px 5px
+                background: black
+                opacity: 0.4
+
+        #slider_arrow_previous
+            @include slider_arrow
+            left: 3%
+
+            img
+                max-width: 100%;
+                height: auto;
+
+        #slider_arrow_next
+            @include slider_arrow
+            right: 3%
+
+            img
+                max-width: 100%;
+                height: auto;
+        .active
+            opacity: 1 !important
+
+    #content
+
+        height: 700px
+
+    #footer
+        height: 10vh
