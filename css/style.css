@@ -146,6 +146,35 @@
   display: none;
 }
 
+#main #content #kolorowe-bloczki #kolorowe-bloczki-1 {
+  background: linear-gradient(320deg, #cb90d1 0%, #ff00f2 100%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-2 {
+  background: linear-gradient(140deg, #00d2ff 0%, #246ed6 70%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-3 {
+  background: linear-gradient(320deg, #ff00c2 0%, #5f157d 70%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-4 {
+  background: linear-gradient(320deg, #f00 0%, #ee6315 100.65%) 100%;
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-5 {
+  background: linear-gradient(320deg, #2bff00 0%, #2e5319 100%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-6 {
+  background: linear-gradient(320deg, #ff5b00 0%, #ffd300 100%);
+}
+
+#main #content .kolorowy-bloczek {
+  border-radius: 8px;
+  color: white;
+}
+
 #main #content #technik_informatyk {
   display: none;
 }
@@ -181,6 +210,7 @@
   margin-top: 10vh;
   padding-bottom: 10vh;
   padding-top: 5vh;
+  margin-right: 0;
 }
 
 #main #content .section2 {
