@@ -68,6 +68,8 @@
         background: #d3cfc9da
         position: relative
 
+
+
         #slider_pointers
             position: absolute
             width: 100%
@@ -97,13 +99,15 @@
             img
                 max-width: 100%
                 height: auto
+
+        #slider_content > div
+            display: none
+
         .active
             opacity: 1 !important
+            display: block !important
 
     #content
-
-        height: 2600px
-
 
         .active
             display: block !important
@@ -141,6 +145,8 @@
             border-radius: 8px
             color: white
 
+        .kolorowy-bloczek p
+            text-align: center
 
 
         #technik_informatyk
@@ -183,14 +189,6 @@
             padding-top: 10vh
             padding-bottom: 10vh
 
-        .section3
-            background-color: #00AAB9
-            padding-bottom: 50px
-
-
-        .section3_2
-            box-sizing: border-box
-
         .cel_k
             list-style-type: none
 
@@ -204,12 +202,14 @@
                width: 80%
         .waves
 
-            display: block
-            height: 300px
+            
+            height: 100px
             background-repeat: repeat-x
             background-size: contain
             background-position: center center
             background-image: url
+            z-index: 200
+            position: absolute
 
     @media (max-width: 810px)
       .section2
@@ -240,14 +240,20 @@
         height: 50vh !important
 
     #footer
-        padding-top: 3vh
+        padding-top: 5vh
         height: 10vh
-        background-color: #303030
+        z-index: 300
         color: white
         height: 100%
+        
+  
+    
+        
+       
+        
 
         .header_footer
-            color: purple
+            color: #03b1fc
             font-size: 20px
             font-variant: small-caps
 
@@ -271,3 +277,17 @@
         .kontakt
             margin: 0
             margin-right:  15px
+
+    
+
+
+.fa
+    z-index: 1000
+
+.container.stopka.row.col-9.mx-auto 
+    margin-top: 80px
+
+.waves
+    svg
+        position: absolute
+        z-index: -100
