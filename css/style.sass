@@ -63,10 +63,13 @@
 
     #slider
         min-height: 400px
-        height: 5rem
+        height: 50rem
         width: 100%
-        background: #d3cfc9da
         position: relative
+        background: url('../assets/background-15.jpg')
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 100% 100%
 
         #slider_pointers
             position: absolute
@@ -97,13 +100,18 @@
             img
                 max-width: 100%
                 height: auto
+
+        #slider_content
+           
+
+            > div
+                display: none
+
         .active
             opacity: 1 !important
+            display: block !important
 
     #content
-
-
-
 
         .active
             display: block !important
@@ -129,6 +137,12 @@
 
             #kolorowe-bloczki-6
                 background: linear-gradient(320deg, rgba(255,91,0,1) 0%, rgba(255,211,0,1) 100%)
+
+        #galeria
+            #ramka
+                border-radius: 8px
+                background: linear-gradient(140deg, rgba(0,210,255,1) 0%, rgba(36,110,214,1) 70%)
+                width: 60vw
 
         .kolorowy-bloczek
             border-radius: 8px
@@ -170,7 +184,7 @@
             background-color: #404040
             color: white
             margin-top: 10vh
-            padding-bottom: 10vh
+            
             padding-top: 5vh
             margin-right: 0
 
