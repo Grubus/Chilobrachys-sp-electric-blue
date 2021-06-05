@@ -13,10 +13,10 @@ arrowPrevious.addEventListener('click', () => {
 })
 
 function set_active(direction) {
-    let oldActive = sliderEnum[activeNumber]
+    document.querySelector(sliderEnum[activeNumber]).querySelector('.underscore').className = 'underscore'
+    document.querySelector('#slider_pointers').children[activeNumber].className = 'slider_pointer'
+    document.querySelector('#content').children[activeNumber].className = ''
 
-    document.querySelector(oldActive).className = document.querySelector(oldActive).className.slice(0, 11)
-    document.querySelector('#slider_pointers').children[activeNumber].className = document.querySelector('#slider_pointers').children[activeNumber].className.slice(0, 14)
     if (direction) {
         if (activeNumber == 4) activeNumber = 0
         else activeNumber++
@@ -25,8 +25,8 @@ function set_active(direction) {
         else activeNumber--
     }
 
-    let newActive = sliderEnum[activeNumber]
+    document.querySelector(sliderEnum[activeNumber]).querySelector('.underscore').className = 'underscore active'
+    document.querySelector('#slider_pointers').children[activeNumber].className += ' active'
+    document.querySelector('#content').children[activeNumber].className = 'active'
 
-    document.querySelector('#slider_pointers').children[activeNumber].className = document.querySelector('#slider_pointers').children[activeNumber].className + " active"
-    document.querySelector(newActive).className = document.querySelector(newActive).className + " active"
 }
