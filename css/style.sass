@@ -68,6 +68,8 @@
         background: #d3cfc9da
         position: relative
 
+
+
         #slider_pointers
             position: absolute
             width: 100%
@@ -97,13 +99,15 @@
             img
                 max-width: 100%
                 height: auto
+
+        #slider_content > div
+            display: none
+
         .active
             opacity: 1 !important
+            display: block !important
 
     #content
-
-        
-
 
         .active
             display: block !important
@@ -129,6 +133,13 @@
 
             #kolorowe-bloczki-6
                 background: linear-gradient(320deg, rgba(255,91,0,1) 0%, rgba(255,211,0,1) 100%)
+
+        #galeria
+            #ramka
+                width: 50vh
+                margin: 0 auto
+                border: solid black 2px
+
 
         .kolorowy-bloczek
             border-radius: 8px
@@ -177,8 +188,6 @@
         .section2
             padding-top: 10vh
             padding-bottom: 10vh
-
-        .section3
 
         .cel_k
             list-style-type: none
