@@ -138,12 +138,6 @@
             #kolorowe-bloczki-6
                 background: linear-gradient(320deg, rgba(255,91,0,1) 0%, rgba(255,211,0,1) 100%)
 
-        #galeria
-            #ramka
-                border-radius: 8px
-                background: linear-gradient(140deg, rgba(0,210,255,1) 0%, rgba(36,110,214,1) 70%)
-                width: 60vw
-
         .kolorowy-bloczek
             border-radius: 8px
             color: white
@@ -299,3 +293,68 @@
     svg
         position: absolute
         z-index: -100
+
+/* Turbo animacja - kaktusy info/
+
+.image-info-animation
+    position: relative
+    width: 100%
+
+
+
+.image-info
+    display: block
+    width: 100%
+
+
+
+.image-info-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba (0,0,0, 0.6)
+    color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    opacity: 0
+    transition: opacity 0.4s
+
+
+.image-info-overlay-blur
+    backdrop-filter: blur(2px)
+    border-radius: 5px 
+
+
+.image-info-overlay *
+    transform: translateY(30px)
+    transition: transform 0.4s
+
+
+.image-info-overlay:hover *
+    transform: translateY(0)
+
+.image-info-overlay:hover
+    opacity: 1
+    background-color: rgba(0, 0, 0, 0.5)
+
+
+
+.image-info-title
+    font-size: 2em
+    font-weight: bold
+
+
+
+.image-info-description
+    font-size: 1.25em
+    margin-top: 0.25em
+    margin-left: 0.5em
+    margin-right: 0.5em
+
+
+/* KONIEC TURBO ANIMACJI*/
