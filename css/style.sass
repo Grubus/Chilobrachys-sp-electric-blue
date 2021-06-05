@@ -102,7 +102,7 @@
                 height: auto
 
         #slider_content
-           
+
 
             > div
                 display: none
@@ -189,14 +189,15 @@
             background-color: #404040
             color: white
             margin-top: 10vh
-            
+
             padding-top: 5vh
             margin-right: 0
 
         .section2
             padding-top: 10vh
             padding-bottom: 10vh
-
+        .text_direction
+          margin-top: 1.2rem !important
         .cel_k
             list-style-type: none
 
@@ -236,6 +237,7 @@
             justify-content: center
             width: 35vw
 
+
     @media (max-width: 810px)
       .section3
         display: flex
@@ -249,7 +251,7 @@
           justify-content: center
           img
             width: 35vw
-      #offcanvasBottom
+    #offcanvasBottom
         height: 50vh !important
 
     #footer
@@ -258,11 +260,6 @@
         z-index: 300
         color: white
         height: 100%
-
-
-
-
-
 
 
         .header_footer
@@ -276,11 +273,16 @@
 
         li
              margin-bottom: 20px
+             color: #67D0FD
 
         a
             text-decoration: none
-            color: white
+            color: #67D0FD
+        h2
+          color: #03b1fc
 
+        p
+          color: #67D0FD
         #icons_footer
             text-align: center
 
@@ -305,7 +307,19 @@
         position: absolute
         z-index: -100
 
-/* Turbo animacja - kaktusy info/
+@media (max-width: 765px)
+  .col-12.col-md-4.circle_photo
+      display: flex
+      justify-content: center
+@media (max-width: 1459px)
+  #footer
+    background-color: rgb(252,176,15) !important
+@media (max-width: 1537px)
+  .bg_foot
+    background-color: rgb(252,176,15) !important
+@media (max-width: 450px)
+  .waves
+    display: none
 
 .image-info-animation
     position: relative
