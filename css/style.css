@@ -139,7 +139,11 @@
 }
 
 #main #content {
-  height: 3400px;
+  height: 2600px;
+}
+
+#main #content .active {
+  display: block !important;
 }
 
 #main #content #strona_glowna {
@@ -242,7 +246,6 @@
   width: 80%;
 }
 
-
 #main #content .waves {
   display: block;
   height: 300px;
@@ -250,13 +253,9 @@
   background-size: contain;
   background-position: center center;
   background-image: url;
-
-#main #content .active {
-  display: block !important;
-
 }
 
-#main #footer {
+t #footer {
   padding-top: 3vh;
   height: 10vh;
   background-color: #303030;
@@ -264,35 +263,35 @@
   height: 100%;
 }
 
-#main #footer .header_footer {
+t #footer .header_footer {
   color: purple;
   font-size: 20px;
   font-variant: small-caps;
 }
 
-#main #footer ul {
+t #footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-#main #footer li {
+t #footer li {
   margin-bottom: 20px;
 }
 
-#main #footer a {
+t #footer a {
   text-decoration: none;
   color: white;
 }
 
-#main #footer #icons_footer {
+t #footer #icons_footer {
   text-align: center;
 }
 
-#main #footer .fa {
+t #footer .fa {
   margin: 20px;
 }
 
-#main #footer .kontakt {
+t #footer .kontakt {
   margin: 0;
   margin-right: 15px;
 }
