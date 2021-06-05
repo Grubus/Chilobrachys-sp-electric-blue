@@ -154,6 +154,14 @@
   display: none;
 }
 
+#main #content #napisy_bloczki {
+  margin-top: 100px;
+}
+
+#main #content #kolorowe-bloczki {
+  margin-bottom: 100px;
+}
+
 #main #content #kolorowe-bloczki #kolorowe-bloczki-1 {
   background: linear-gradient(320deg, #cb90d1 0%, #ff00f2 100%);
 }
@@ -448,6 +456,7 @@
 }
 
 .image-info-description {
+  text-align: center;
   font-size: 1.25em;
   margin-top: 0.25em;
   margin-left: 0.5em;
