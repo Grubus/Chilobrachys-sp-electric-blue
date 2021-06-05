@@ -74,10 +74,13 @@
 
 #main #slider {
   min-height: 400px;
-  height: 5rem;
+  height: 50rem;
   width: 100%;
-  background: #d3cfc9da;
   position: relative;
+  background: url("../assets/background-15.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
 }
 
 #main #slider #slider_pointers {
