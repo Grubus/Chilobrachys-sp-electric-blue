@@ -128,7 +128,15 @@
 }
 
 #main #content {
-  height: 2000px;
+  height: 2600px;
+}
+
+#main #content #technik_informatyk {
+  display: none;
+}
+
+#main #content #technik_elektronik {
+  display: none;
 }
 
 #main #content #technik_programista {
@@ -144,6 +152,8 @@
 #main #content .circle_photo img {
   border-radius: 1000px;
   width: 25vw;
+  border: 3px outset;
+  padding: 5px;
 }
 
 #main #content .section1 {
