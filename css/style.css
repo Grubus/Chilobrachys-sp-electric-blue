@@ -1,16 +1,23 @@
 * {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   margin: 0;
   padding: 0;
 }
 
 #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
 #main #header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 20000;
@@ -23,11 +30,15 @@
 }
 
 #main #header #menu #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   list-style: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main #header #menu #navbar .navbar_item {
@@ -35,6 +46,7 @@
   position: relative;
   padding: 20px;
   margin: 10px;
+  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -75,8 +87,12 @@
   position: absolute;
   width: 100%;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main #slider #slider_pointers .slider_pointer {
@@ -93,6 +109,7 @@
   position: absolute;
   top: 25%;
   background: lightbrown;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   left: 3%;
@@ -109,6 +126,7 @@
   position: absolute;
   top: 25%;
   background: lightbrown;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   right: 3%;
@@ -160,12 +178,6 @@
   background: linear-gradient(320deg, #ff5b00 0%, #ffd300 100%);
 }
 
-#main #content #galeria #ramka {
-  width: 50vh;
-  margin: 0 auto;
-  border: solid black 2px;
-}
-
 #main #content .kolorowy-bloczek {
   border-radius: 8px;
   color: white;
@@ -198,8 +210,12 @@
 }
 
 #main #content .center_iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main #content .circle_photo img {
@@ -248,8 +264,13 @@
 
 @media (max-width: 1123px) {
   #main .section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin: 0 auto !important;
   }
   #main .text_direction {
@@ -259,19 +280,30 @@
   #main .text_direction .circle_photo {
     padding-bottom: 100px !important;
     width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #main .text_direction .circle_photo img {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 35vw;
   }
 }
 
 @media (max-width: 810px) {
   #main .section3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto !important;
   }
   #main .text_direction {
@@ -279,8 +311,12 @@
   }
   #main .text_direction .circle_photo {
     width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #main .text_direction .circle_photo img {
     width: 35vw;
@@ -344,5 +380,79 @@
   z-index: -100;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Turbo animacja - kaktusy info/ */
+.image-info-animation {
+  position: relative;
+  width: 100%;
+}
 
+.image-info {
+  display: block;
+  width: 100%;
+}
+
+.image-info-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba 0, 0, 0, 0.6;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.image-info-overlay-blur {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 5px;
+}
+
+.image-info-overlay * {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.image-info-overlay:hover * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.image-info-overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-info-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image-info-description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* KONIEC TURBO ANIMACJI*/
+/*# sourceMappingURL=style.css.map */
