@@ -118,8 +118,12 @@
 
         #strona_glowna
             display: none
+        
+        #napisy_bloczki
+            margin-top: 100px
 
         #kolorowe-bloczki
+            margin-bottom: 100px
             #kolorowe-bloczki-1
                 background: linear-gradient(320deg, rgba(203,144,209,1) 0%, rgba(255,0,242,1) 100%)
 
@@ -138,15 +142,16 @@
             #kolorowe-bloczki-6
                 background: linear-gradient(320deg, rgba(255,91,0,1) 0%, rgba(255,211,0,1) 100%)
 
-        #galeria
-            #ramka
-                border-radius: 8px
-                background: linear-gradient(140deg, rgba(0,210,255,1) 0%, rgba(36,110,214,1) 70%)
-                width: 60vw
-
         .kolorowy-bloczek
             border-radius: 8px
             color: white
+
+        .kolorowy-bloczek:hover      
+            scale: 1.03
+            transition: 0.8s
+            filter: drop-shadow(rgba(0, 0, 0, 0.5) 10px 10px 15px)
+            
+
 
         .kolorowy-bloczek p
             text-align: center
@@ -215,21 +220,25 @@
             z-index: 200
             position: absolute
 
-    @media (max-width: 810px)
+    @media (max-width: 1123px)
       .section2
         display: flex
         flex-direction: column-reverse
         margin: 0 auto !important
       .text_direction
+        padding-top: 2rem
         width: 91.6666666667% !important
         .circle_photo
+          padding-bottom: 100px !important
           width: 100% !important
           display: flex
           justify-content: center
           img
+            justify-content: center
             width: 35vw
 
 
+    @media (max-width: 810px)
       .section3
         display: flex
         flex-direction: column
@@ -311,3 +320,67 @@
 @media (max-width: 450px)
   .waves
     display: none
+
+.image-info-animation
+    position: relative
+    width: 100%
+
+
+
+.image-info
+    display: block
+    width: 100%
+
+
+
+.image-info-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba (0,0,0, 0.6)
+    color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    opacity: 0
+    transition: opacity 0.4s
+
+
+.image-info-overlay-blur
+    backdrop-filter: blur(2px)
+    border-radius: 5px 
+
+
+.image-info-overlay *
+    transform: translateY(30px)
+    transition: transform 0.4s
+
+
+.image-info-overlay:hover *
+    transform: translateY(0)
+
+.image-info-overlay:hover
+    opacity: 1
+    background-color: rgba(0, 0, 0, 0.5)
+
+
+
+.image-info-title
+    font-size: 2em
+    font-weight: bold
+
+
+
+.image-info-description
+    text-align: center
+    font-size: 1.25em
+    margin-top: 0.25em
+    margin-left: 0.5em
+    margin-right: 0.5em
+
+
+/* KONIEC TURBO ANIMACJI*/
