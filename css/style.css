@@ -128,7 +128,45 @@
 }
 
 #main #content {
-  height: 700px;
+  height: 2000px;
+}
+
+#main #content #technik_programista .section_title {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10vh;
+}
+
+#main #content #technik_programista .circle_photo img {
+  border-radius: 1000px;
+  width: 25vw;
+}
+
+#main #content #technik_programista .section1 {
+  background-color: #404040;
+  color: white;
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+  padding-top: 5vh;
+}
+
+#main #content #technik_programista .section2 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#main #content .cel_k {
+  list-style-type: none;
+}
+
+#main #content .window {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+#main #content .plan img {
+  width: 80%;
 }
 
 #main #footer {
@@ -170,9 +208,5 @@
 #main #footer .kontakt {
   margin: 0;
   margin-right: 15px;
-}
-
-.section_about {
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
