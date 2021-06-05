@@ -189,6 +189,8 @@
 #main #content .kolorowy-bloczek {
   border-radius: 8px;
   color: white;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
 }
 
 #main #content .kolorowy-bloczek:hover {
