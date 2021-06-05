@@ -358,3 +358,21 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 1459px) {
+  #footer {
+    background-color: #fcb00f !important;
+  }
+}
+
+@media (max-width: 1537px) {
+  .bg_foot {
+    background-color: #fcb00f !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .waves {
+    display: none;
+  }
+}
