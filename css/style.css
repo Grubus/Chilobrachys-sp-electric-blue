@@ -179,6 +179,10 @@
   color: white;
 }
 
+#main #content .kolorowy-bloczek p {
+  text-align: center;
+}
+
 #main #content #technik_informatyk {
   display: none;
 }
