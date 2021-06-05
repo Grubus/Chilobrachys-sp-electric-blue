@@ -191,6 +191,14 @@
   color: white;
 }
 
+#main #content .kolorowy-bloczek:hover {
+  scale: 1.03;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.5) 10px 10px 15px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.5) 10px 10px 15px);
+}
+
 #main #content .kolorowy-bloczek p {
   text-align: center;
 }
