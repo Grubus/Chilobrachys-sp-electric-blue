@@ -221,7 +221,6 @@
   background-color: #404040;
   color: white;
   margin-top: 10vh;
-  padding-bottom: 10vh;
   padding-top: 5vh;
   margin-right: 0;
 }
@@ -229,11 +228,6 @@
 #main #content .section2 {
   padding-top: 10vh;
   padding-bottom: 10vh;
-}
-
-#main #content .section3_2 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 #main #content .cel_k {
