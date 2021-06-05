@@ -255,7 +255,7 @@
   background-image: url;
 }
 
-t #footer {
+#main #footer {
   padding-top: 3vh;
   height: 10vh;
   background-color: #303030;
@@ -263,35 +263,35 @@ t #footer {
   height: 100%;
 }
 
-t #footer .header_footer {
+#main #footer .header_footer {
   color: purple;
   font-size: 20px;
   font-variant: small-caps;
 }
 
-t #footer ul {
+#main #footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-t #footer li {
+#main #footer li {
   margin-bottom: 20px;
 }
 
-t #footer a {
+#main #footer a {
   text-decoration: none;
   color: white;
 }
 
-t #footer #icons_footer {
+#main #footer #icons_footer {
   text-align: center;
 }
 
-t #footer .fa {
+#main #footer .fa {
   margin: 20px;
 }
 
-t #footer .kontakt {
+#main #footer .kontakt {
   margin: 0;
   margin-right: 15px;
 }
