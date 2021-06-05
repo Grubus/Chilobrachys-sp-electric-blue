@@ -134,8 +134,13 @@
   height: auto;
 }
 
+#main #slider #slider_content > div {
+  display: none;
+}
+
 #main #slider .active {
   opacity: 1 !important;
+  display: block !important;
 }
 
 #main #content .active {
@@ -229,11 +234,6 @@
 #main #content .section2 {
   padding-top: 10vh;
   padding-bottom: 10vh;
-}
-
-#main #content .section3_2 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 #main #content .cel_k {
