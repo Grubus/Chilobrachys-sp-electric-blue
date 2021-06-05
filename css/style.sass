@@ -17,7 +17,6 @@
     display: flex
     flex-direction: column
     width: 100%
-    
 
     #header
         position: sticky
@@ -37,19 +36,29 @@
                 justify-content: center
 
                 .navbar_item
+                    width: 15%
+                    position: relative
                     padding: 20px
                     margin: 10px
                     display: grid
                     place-items: center
 
-                .active
-                    background: darken(#ebe8d4, 10%)
+                    .underscore
+                        position: absolute
+                        bottom: 0
+                        background: black
+                        opacity: 0.6
+                        height: 2px
+                        width: 80%
+                        display: none
+
+                    .active
+                        display: block
 
                 .border
                     margin-top: 10px
                     background: black
                     opacity: 0.6
-                    height: 80%
                     width: 5px
 
     #slider
@@ -92,43 +101,49 @@
             opacity: 1 !important
 
     #content
-
         height: 2600px
+
+        #strona_glowna
+            display: none
+
         #technik_informatyk
-            display: none    
+            display: none
+
         #technik_elektronik
-            display: none 
-               
+            display: none
+
         #technik_programista
-            display: none 
-              
+            display: none
+
         #technik_teleinformatyk
-                 
+            display: none
+
         .section_title
             text-align: center
             margin-top: 25px
             margin-bottom: 10vh
+
         .circle_photo
             img
                 border-radius: 1000px
                 width: 25vw
                 border: 3px outset
-              
                 padding: 5px
+
         .section1
             background-color: #404040
             color: white
             margin-top: 10vh
             padding-bottom: 10vh
             padding-top: 5vh
+
         .section2
-            
             padding-top: 10vh
             padding-bottom: 10vh
 
-        
         .cel_k
             list-style-type: none
+
         .window
             background-color: blue
             width: 200px
@@ -138,6 +153,9 @@
             img
                width: 80%
 
+        .active
+            display: block !important
+
     #footer
         padding-top: 3vh
         height: 10vh
@@ -145,28 +163,29 @@
         color: white
         height: 100%
 
-        
-
         .header_footer
             color: purple
             font-size: 20px
             font-variant: small-caps
-        
+
         ul
-            list-style-type: none   
+            list-style-type: none
             padding: 0
+
         li
              margin-bottom: 20px
+
         a
             text-decoration: none
             color: white
-           
+
         #icons_footer
             text-align: center
+
         .fa
             margin: 20px
-            
-        .kontakt 
+
+        .kontakt
             margin: 0
             margin-right:  15px
 
