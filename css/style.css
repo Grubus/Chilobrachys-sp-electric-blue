@@ -139,7 +139,7 @@
 }
 
 #main #content {
-  height: 2600px;
+  height: 3400px;
 }
 
 #main #content #strona_glowna {
@@ -218,6 +218,16 @@
   padding-bottom: 10vh;
 }
 
+#main #content .section3 {
+  background-color: #00AAB9;
+  padding-bottom: 50px;
+}
+
+#main #content .section3_2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #main #content .cel_k {
   list-style-type: none;
 }
@@ -232,8 +242,18 @@
   width: 80%;
 }
 
+
+#main #content .waves {
+  display: block;
+  height: 300px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center center;
+  background-image: url;
+
 #main #content .active {
   display: block !important;
+
 }
 
 #main #footer {
