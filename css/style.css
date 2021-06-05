@@ -131,18 +131,22 @@
   height: 2000px;
 }
 
-#main #content #technik_programista .section_title {
+#main #content #technik_programista {
+  display: none;
+}
+
+#main #content .section_title {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 10vh;
 }
 
-#main #content #technik_programista .circle_photo img {
+#main #content .circle_photo img {
   border-radius: 1000px;
   width: 25vw;
 }
 
-#main #content #technik_programista .section1 {
+#main #content .section1 {
   background-color: #404040;
   color: white;
   margin-top: 10vh;
@@ -150,7 +154,7 @@
   padding-top: 5vh;
 }
 
-#main #content #technik_programista .section2 {
+#main #content .section2 {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
