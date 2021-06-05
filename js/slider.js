@@ -45,9 +45,11 @@ arrowPrevious.addEventListener('click', () => {
 })
 
 function set_active(direction, value = null) {
-    document.querySelector(sliderEnum[activeNumber]).querySelector('.underscore').className = 'underscore'
+    document.querySelector('#menu').querySelector(sliderEnum[activeNumber]).querySelector('.underscore').className = 'underscore'
+    document.querySelector('#slider_content').querySelector(sliderEnum[activeNumber]).className = ''
     document.querySelector('#slider_pointers').children[activeNumber].className = 'slider_pointer'
     document.querySelector('#content').children[activeNumber].className = ''
+
     if (value == null) {
         if (direction) {
             if (activeNumber == 4) activeNumber = 0
@@ -59,6 +61,8 @@ function set_active(direction, value = null) {
     } else {
         activeNumber = value
     }
+
+    document.querySelector('#slider_content').querySelector(sliderEnum[activeNumber]).className = 'active'
     document.querySelector(sliderEnum[activeNumber]).querySelector('.underscore').className = 'underscore active'
     document.querySelector('#slider_pointers').children[activeNumber].className += ' active'
     document.querySelector('#content').children[activeNumber].className = 'active'
