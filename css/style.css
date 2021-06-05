@@ -42,6 +42,8 @@
 }
 
 #main #header #menu #navbar .navbar_item {
+  width: 15%;
+  position: relative;
   padding: 20px;
   margin: 10px;
   display: -ms-grid;
@@ -49,15 +51,24 @@
   place-items: center;
 }
 
-#main #header #menu #navbar .active {
-  background: #dbd5b1;
+#main #header #menu #navbar .navbar_item .underscore {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  opacity: 0.6;
+  height: 2px;
+  width: 80%;
+  display: none;
+}
+
+#main #header #menu #navbar .navbar_item .active {
+  display: block;
 }
 
 #main #header #menu #navbar .border {
   margin-top: 10px;
   background: black;
   opacity: 0.6;
-  height: 80%;
   width: 5px;
 }
 
@@ -82,8 +93,8 @@
 }
 
 #main #slider #slider_pointers .slider_pointer {
-  height: 5px;
-  width: 30px;
+  height: 10px;
+  width: 40px;
   margin: 10px 5px;
   background: black;
   opacity: 0.4;
@@ -131,6 +142,39 @@
   height: 3400px;
 }
 
+#main #content #strona_glowna {
+  display: none;
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-1 {
+  background: linear-gradient(320deg, #cb90d1 0%, #ff00f2 100%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-2 {
+  background: linear-gradient(140deg, #00d2ff 0%, #246ed6 70%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-3 {
+  background: linear-gradient(320deg, #ff00c2 0%, #5f157d 70%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-4 {
+  background: linear-gradient(320deg, #f00 0%, #ee6315 100.65%) 100%;
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-5 {
+  background: linear-gradient(320deg, #2bff00 0%, #2e5319 100%);
+}
+
+#main #content #kolorowe-bloczki #kolorowe-bloczki-6 {
+  background: linear-gradient(320deg, #ff5b00 0%, #ffd300 100%);
+}
+
+#main #content .kolorowy-bloczek {
+  border-radius: 8px;
+  color: white;
+}
+
 #main #content #technik_informatyk {
   display: none;
 }
@@ -140,6 +184,10 @@
 }
 
 #main #content #technik_programista {
+  display: none;
+}
+
+#main #content #technik_teleinformatyk {
   display: none;
 }
 
@@ -162,6 +210,7 @@
   margin-top: 10vh;
   padding-bottom: 10vh;
   padding-top: 5vh;
+  margin-right: 0;
 }
 
 #main #content .section2 {
@@ -193,6 +242,7 @@
   width: 80%;
 }
 
+
 #main #content .waves {
   display: block;
   height: 300px;
@@ -200,6 +250,10 @@
   background-size: contain;
   background-position: center center;
   background-image: url;
+
+#main #content .active {
+  display: block !important;
+
 }
 
 #main #footer {
