@@ -775,4 +775,24 @@
     height: 10rem !important;
   }
 }
+
+
+@media (max-width: 1260px) {
+  .waves {
+    display: none;
+  }
+}
+
+@media (max-width: 1123px) {
+  #magic_div {
+    display: none;
+  }
+}
+
+@media (max-width: 1464px) {
+  .section3 {
+    padding-bottom: 10vh;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
