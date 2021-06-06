@@ -72,9 +72,9 @@
         align-items: center
         justify-content: center
         color: white
-        
 
-        
+
+
     #slider
         min-height: 400px
         height: 50rem
@@ -84,7 +84,7 @@
         background-repeat: no-repeat
         background-position: 50% 50%
         background-size: 110% 100%
-      
+
         #slider_pointers
             position: absolute
             width: 100%
@@ -200,6 +200,7 @@
         .center_iframe
           display: flex
           justify-content: center
+          padding-right: 0
 
         iframe
             border: 2px solid white
@@ -418,8 +419,6 @@
 /* KONIEC TURBO ANIMACJI*/
 
 
-
-
 #slider1
     opacity: 0
     height: 800px
@@ -446,3 +445,68 @@
     -webkit-transform: translateX(0)
     transform: translateX(0)
     opacity: 1
+@media (max-width: 1422px)
+  #slider1
+      height: 500px
+  #main #slider
+      height: 35rem !important
+
+@media (max-width: 1090px)
+  #slider1
+      height: 350px
+  #main #slider
+      height: 25rem !important
+
+@media (max-width: 658px)
+  #slider1
+      height: 300px
+  #main #slider
+      min-height: 20rem !important
+      height: 20rem !important
+      #slide-title
+        font-size: 4.3rem !important
+      #slide-second-title
+        font-size: 2.3rem !important
+
+@media (max-width: 570px)
+  .row.d-flex.justify-content-center
+    margin: 0 10px !important
+  .kolorowy-bloczek
+    margin: 10px !important
+  #slider1
+      height: 250px
+  #main #slider
+      min-height: 18rem !important
+      height: 18rem !important
+
+@media (max-width: 472px)
+  #main #slider
+    min-height: 16rem !important
+    height: 16rem !important
+    #slide-title
+      font-size: 3.3rem !important
+    #slide-second-title
+      font-size: 1.8rem !important
+
+@media(max-width: 364px)
+  #slider1
+    height: 200px
+  #main #slider
+    min-height: 14rem !important
+    height: 14rem !important
+
+@media (max-width: 352px)
+  #main #slider
+    min-height: 13rem !important
+    height: 13rem !important
+    #slide-title
+      font-size: 2.3rem !important
+    #slide-second-title
+      font-size: 1.3rem !important
+
+@media (max-width: 300px)
+  #slider1
+      height: 150px !important
+  #main #slider
+    min-height: 10rem !important
+    height: 10rem !important
