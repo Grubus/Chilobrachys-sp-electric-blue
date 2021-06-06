@@ -5,7 +5,20 @@ let activeNumber = 0
 const sliderEnum = Object.freeze({ 0: '#main_page', 1: '#first_spec', 2: '#second_spec', 3: '#third_spec', 4: '#fourth_spec' })
 
 const sliderEnum_nav = Object.freeze({ 0: '#main_page_nav', 1: '#first_spec_nav', 2: '#second_spec_nav', 3: '#third_spec_nav', 4: '#fourth_spec_nav' })
+const sliderEnum_footer = Object.freeze({ 1: '#first_spec_footer', 2: '#second_spec_footer', 3: '#third_spec_footer', 4: '#fourth_spec_footer' })
 
+document.querySelector(sliderEnum_footer[1]).addEventListener('click', () => {
+    set_active(true, 1)
+})
+document.querySelector(sliderEnum_footer[2]).addEventListener('click', () => {
+    set_active(true, 2)
+})
+document.querySelector(sliderEnum_footer[3]).addEventListener('click', () => {
+    set_active(true, 3)
+})
+document.querySelector(sliderEnum_footer[4]).addEventListener('click', () => {
+    set_active(true, 4)
+})
 
 let bottom = document.querySelector('#slider_pointers').children
 
