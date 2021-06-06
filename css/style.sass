@@ -37,7 +37,7 @@
 
                 .navbar_item:hover
                     cursor: pointer
-                    
+
                 .navbar_item
                     text-align: center
                     width: 15%
@@ -160,7 +160,7 @@
 
             #kolorowe-bloczki-4
                 background: linear-gradient(320deg, rgba(255,91,0,1) 0%, rgba(255,211,0,1) 100%)
-                
+
 
             #kolorowe-bloczki-5
                 background: linear-gradient(320deg, rgba(43,255,0,1) 0%, rgba(46,83,25,1) 100%)
@@ -449,15 +449,33 @@
     -webkit-transform: translateX(0)
     transform: translateX(0)
     opacity: 1
+
+.is-visible-movie
+  opacity: 1
+  transform: rotateZ(0deg)
+  animation: movie-right 1s ease-in-out both
+
+
+@keyframes movie-right
+  0%
+    -webkit-transform: translateX(-100px)
+    transform: translateX(-100px)
+    opacity: 0
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+
 @media (max-width: 1422px)
   #slider1
-      height: 500px
+      height: 550px
   #main #slider
       height: 35rem !important
 
 @media (max-width: 1090px)
   #slider1
-      height: 350px
+      height: 400px
   #main #slider
       height: 25rem !important
 
@@ -494,7 +512,7 @@
 
 @media(max-width: 364px)
   #slider1
-    height: 200px
+    height: 190px
   #main #slider
     min-height: 14rem !important
     height: 14rem !important
