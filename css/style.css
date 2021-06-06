@@ -164,6 +164,10 @@
   margin-top: 100px;
 }
 
+#main #content .subject-description {
+  margin-top: 100px;
+}
+
 #main #content .icon-title {
   font-size: 2.0rem;
 }
@@ -681,3 +685,6 @@
     padding-bottom: 10vh;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
+
