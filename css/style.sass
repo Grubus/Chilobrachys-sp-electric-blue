@@ -118,7 +118,7 @@
 
         #strona_glowna
             display: none
-        
+
         #napisy_bloczki
             margin-top: 100px
 
@@ -146,11 +146,11 @@
             border-radius: 8px
             color: white
 
-        .kolorowy-bloczek:hover      
+        .kolorowy-bloczek:hover
             scale: 1.03
             transition: 0.8s
             filter: drop-shadow(rgba(0, 0, 0, 0.5) 10px 10px 15px)
-            
+
 
 
         .kolorowy-bloczek p
@@ -352,7 +352,7 @@
 
 .image-info-overlay-blur
     backdrop-filter: blur(1px)
-    border-radius: 5px 
+    border-radius: 5px
 
 
 .image-info-overlay *
@@ -384,3 +384,33 @@
 
 
 /* KONIEC TURBO ANIMACJI*/
+
+
+
+
+#slider1
+    opacity: 0
+    height: 800px
+.slider
+    opacity: 0
+    transform: scaleY(0)
+@keyframes test
+  0%{transform: scaleY(0);}
+  100%{transform: scaleY(1);}
+
+.is-visible-1
+  opacity: 1
+  transform: rotateZ(0deg)
+  animation:  slide-left 1s ease-in-out both
+
+
+@keyframes slide-left
+  0%
+    -webkit-transform: translateX(100px)
+    transform: translateX(100px)
+    opacity: 0
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
