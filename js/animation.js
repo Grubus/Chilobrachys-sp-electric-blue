@@ -46,7 +46,7 @@ return (
 //animacja_movie
 var scroll1 = window.requestAnimationFrame ||
          function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow1 = document.querySelectorAll('#movie');
+var elementsToShow1 = document.querySelectorAll('.movie');
 function loop1() {
 
     Array.prototype.forEach.call(elementsToShow1, function(element){
@@ -81,7 +81,7 @@ return (
 //animacja_text
 var scroll2 = window.requestAnimationFrame ||
          function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow2 = document.querySelectorAll('#text_movie');
+var elementsToShow2 = document.querySelectorAll('.text_movie');
 function loop2() {
 
     Array.prototype.forEach.call(elementsToShow2, function(element){
