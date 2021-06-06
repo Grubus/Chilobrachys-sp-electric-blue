@@ -4,21 +4,24 @@ let activeNumber = 0
 
 const sliderEnum = Object.freeze({ 0: '#main_page', 1: '#first_spec', 2: '#second_spec', 3: '#third_spec', 4: '#fourth_spec' })
 
+const sliderEnum_nav = Object.freeze({ 0: '#main_page_nav', 1: '#first_spec_nav', 2: '#second_spec_nav', 3: '#third_spec_nav', 4: '#fourth_spec_nav' })
+
+
 let bottom = document.querySelector('#slider_pointers').children
 
-document.querySelector(sliderEnum[0]).addEventListener('click', () => {
+document.querySelector(sliderEnum_nav[0]).addEventListener('click', () => {
     set_active(true, 0)
 })
-document.querySelector(sliderEnum[1]).addEventListener('click', () => {
+document.querySelector(sliderEnum_nav[1]).addEventListener('click', () => {
     set_active(true, 1)
 })
-document.querySelector(sliderEnum[2]).addEventListener('click', () => {
+document.querySelector(sliderEnum_nav[2]).addEventListener('click', () => {
     set_active(true, 2)
 })
-document.querySelector(sliderEnum[3]).addEventListener('click', () => {
+document.querySelector(sliderEnum_nav[3]).addEventListener('click', () => {
     set_active(true, 3)
 })
-document.querySelector(sliderEnum[4]).addEventListener('click', () => {
+document.querySelector(sliderEnum_nav[4]).addEventListener('click', () => {
     set_active(true, 4)
 })
 bottom[0].addEventListener('click', () => {
@@ -45,7 +48,7 @@ arrowPrevious.addEventListener('click', () => {
 })
 
 function set_active(direction, value = null) {
-    document.querySelector('#menu').querySelector(sliderEnum[activeNumber]).querySelector('.underscore').className = 'underscore'
+    document.querySelector('#menu').querySelector(sliderEnum_nav[activeNumber]).querySelector('.underscore').className = 'underscore'
     document.querySelector('#slider_content').querySelector(sliderEnum[activeNumber]).className = ''
     document.querySelector('#slider_pointers').children[activeNumber].className = 'slider_pointer'
     document.querySelector('#content').children[activeNumber].className = ''
@@ -63,7 +66,7 @@ function set_active(direction, value = null) {
     }
 
     document.querySelector('#slider_content').querySelector(sliderEnum[activeNumber]).className = 'active'
-    document.querySelector(sliderEnum[activeNumber]).querySelector('.underscore').className = 'underscore active'
+    document.querySelector(sliderEnum_nav[activeNumber]).querySelector('.underscore').className = 'underscore active'
     document.querySelector('#slider_pointers').children[activeNumber].className += ' active'
     document.querySelector('#content').children[activeNumber].className = 'active'
 
@@ -83,7 +86,7 @@ setTimeout(()=>{
 
 var scroll = window.requestAnimationFrame ||
          function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('#kolorowe-bloczki'); 
+var elementsToShow = document.querySelectorAll('#kolorowe-bloczki');
 function loop() {
 
     Array.prototype.forEach.call(elementsToShow, function(element){
