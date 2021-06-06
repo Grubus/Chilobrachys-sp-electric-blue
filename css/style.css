@@ -157,6 +157,10 @@
   height: auto;
 }
 
+#main #slider #slider_arrow_next:hover, #main #slider #slider_arrow_previous:hover {
+  cursor: pointer;
+}
+
 #main #slider #slider_arrow_next {
   height: 50%;
   width: 5%;
