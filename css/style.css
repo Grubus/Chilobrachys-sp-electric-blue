@@ -192,7 +192,11 @@
 }
 
 #main #content .icon-title {
-  font-size: 1.8rem;
+  font-size: 2.0rem;
+}
+
+#main #content .icon-description {
+  font-size: 1.2rem;
 }
 
 #main #content #napisy_bloczki {
