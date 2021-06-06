@@ -269,6 +269,11 @@
           justify-content: center;
 }
 
+#main #content iframe {
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
 #main #content .circle_photo img {
   border-radius: 1000px;
   width: 25vw;
