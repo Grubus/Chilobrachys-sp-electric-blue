@@ -381,6 +381,18 @@
   height: 50vh !important;
 }
 
+#main #offcanvasBottom1 {
+  height: 50vh !important;
+}
+
+#main #offcanvasBottom2 {
+  height: 50vh !important;
+}
+
+#main #offcanvasBottom3 {
+  height: 50vh !important;
+}
+
 #main #footer {
   padding-top: 5vh;
   height: 10vh;
